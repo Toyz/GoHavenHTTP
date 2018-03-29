@@ -4,13 +4,14 @@
 [[projects]]
   name = "github.com/PuerkitoBio/goquery"
   packages = ["."]
-  revision = "61aa1975b1f7856927c526b0e0cd8c8b3a3030d0"
+  revision = "a86ea073017a6beddef78c8659e7224e8ca634b0"
+  version = "v1.4.0"
 
 [[projects]]
   branch = "master"
   name = "github.com/Toyz/GoHaven"
   packages = ["."]
-  revision = "05248d5e480d7620047e45eec1ce0bbbb351b028"
+  revision = "484ba6471139b082dc9031994900277456f1a369"
 
 [[projects]]
   name = "github.com/andybalholm/cascadia"
@@ -45,6 +46,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0d068702727afa7bdd41ad0559a4cb47eb755f95c828892dc9de316f4a017431"
+  inputs-digest = "895081f3ab6d3a57c406a5cab80fc90d61a112d6e7a660bb668f6a020180f466"
   solver-name = "gps-cdcl"
   solver-version = 1

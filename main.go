@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
+	"strings"
 
 	"github.com/Toyz/GoHaven"
 	"github.com/julienschmidt/httprouter"
@@ -33,17 +34,20 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		options = append(options, GoHaven.PuritySFW)
 	} else {
 		var p GoHaven.Purity
-		p.Set(purity)
-
+		for _, pure := range strings.Split(purity, ",") {
+			p.Set(pure)
+		}
 		options = append(options, p)
 	}
 
-	cat := r.URL.Query().Get("category")
-	if len(cat) <= 0 {
+	cata := r.URL.Query().Get("category")
+	if len(cata) <= 0 {
 		options = append(options, GoHaven.CatGeneral)
 	} else {
 		var p GoHaven.Categories
-		p.Set(cat)
+		for _, cat := range strings.Split(cata, ",") {
+			p.Set(cat)
+		}
 
 		options = append(options, p)
 	}
@@ -66,10 +70,13 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 		options = append(options, p)
 	}
 
-	ratio := r.URL.Query().Get("ratio")
-	if len(ratio) > 0 {
+	ratios := r.URL.Query().Get("ratio")
+	if len(ratios) > 0 {
 		var p GoHaven.Ratios
-		p.Set(ratio)
+
+		for _, ratio := range strings.Split(ratios, ",") {
+			p.Set(ratio)
+		}
 
 		options = append(options, p)
 	}
@@ -108,7 +115,7 @@ func main() {
 
 	router := httprouter.New()
 	router.GET("/search", Index)
-	router.GET("/info/:id", Info)
+	router.GET("/detail/:id", Info)
 
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
