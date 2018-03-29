@@ -1,0 +1,42 @@
+{
+	"ImportPath": "github.com/Toyz/GoHavenHTTP",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/PuerkitoBio/goquery",
+			"Comment": "v1.3.0-6-g61aa197",
+			"Rev": "61aa1975b1f7856927c526b0e0cd8c8b3a3030d0"
+		},
+		{
+			"ImportPath": "github.com/Toyz/GoHaven",
+			"Rev": "05248d5e480d7620047e45eec1ce0bbbb351b028"
+		},
+		{
+			"ImportPath": "github.com/andybalholm/cascadia",
+			"Comment": "v1.0.0",
+			"Rev": "901648c87902174f774fac311d7f176f8647bdaa"
+		},
+		{
+			"ImportPath": "github.com/julienschmidt/httprouter",
+			"Comment": "v1.1-61-gd189839",
+			"Rev": "d1898390779332322e6b5ca5011da4bf249bb056"
+		},
+		{
+			"ImportPath": "github.com/mewkiz/pkg/errutil",
+			"Rev": "c19a6f9fa6f8bc8710e243710ee205c13688b998"
+		},
+		{
+			"ImportPath": "github.com/mewkiz/pkg/term",
+			"Rev": "c19a6f9fa6f8bc8710e243710ee205c13688b998"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "6078986fec03a1dcc236c34816c71b0e05018fda"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "6078986fec03a1dcc236c34816c71b0e05018fda"
+		}
+	]
+}
