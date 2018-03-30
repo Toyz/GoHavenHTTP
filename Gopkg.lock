@@ -11,7 +11,7 @@
   branch = "master"
   name = "github.com/Toyz/GoHaven"
   packages = ["."]
-  revision = "ba4febb0e3279cead01aa0a7a3a6173ac392fc8c"
+  revision = "c00d649debd07fc6d757a192cc622411c8f9eec2"
 
 [[projects]]
   name = "github.com/andybalholm/cascadia"
