@@ -11,7 +11,7 @@
   branch = "master"
   name = "github.com/Toyz/GoHaven"
   packages = ["."]
-  revision = "c00d649debd07fc6d757a192cc622411c8f9eec2"
+  revision = "1f87db227f298482cdc6ea85f8496a118767726a"
 
 [[projects]]
   name = "github.com/andybalholm/cascadia"
@@ -41,7 +41,7 @@
     "html",
     "html/atom"
   ]
-  revision = "6078986fec03a1dcc236c34816c71b0e05018fda"
+  revision = "b68f30494add4df6bd8ef5e82803f308e7f7c59c"
 
 [solve-meta]
   analyzer-name = "dep"
