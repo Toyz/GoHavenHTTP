@@ -89,9 +89,10 @@ func Index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	if err != nil {
 		w.WriteHeader(500)
 		data, _ = json.Marshal(err)
+	} else {
+		data, _ = json.Marshal(results)
 	}
-
-	data, _ = json.Marshal(results)
+	
 	w.Write(data)
 }
 
